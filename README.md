@@ -7,9 +7,9 @@
 
 ### The Data
 
-The data used is sourced from Twitter from SXSW 2013, and contains tweets about the SXSW tech events and product announcements. Most of the tweets are about Apple and Google products, so I will analyze sentiment for each brand. The raw data can be found in the data folder in this repository.
+The text data used in NLP is sourced from Twitter using the twint package for scraping. This was pulled in from tweets mentioning vaccines within the date range of 1/1/21-6/15/21
+The vaccination data was sourced from local government health agency websites. 
 
-The data presented a challenge in terms of class imbalance; the majority of the data was labeled as 'neutral', leaving a relatively small amount of samples that indicated actual sentiment, positive or negative. 
 
 ![sentiment_bars.png](./Images/sentiment_bars.png)
 
