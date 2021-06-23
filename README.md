@@ -65,12 +65,13 @@ Thank you!
 
 ## Sources
 
-Vaccination Data
-https://github.com/nychealth/covid-vaccine-data/tree/main/doses
-http://publichealth.lacounty.gov/media/coronavirus/vaccine/vaccine-dashboard.htm#selectcity
-https://data.cityofchicago.org/Health-Human-Services/COVID-19-Daily-Vaccinations-Administered-in-Chicag/4564-ixr2
-https://covid-harriscounty.hub.arcgis.com/datasets/1377f9a5a7f94917bb3b552492931af1_0/about
+Vaccination Data:
+[NYC Department of Health Github](https://github.com/nychealth/covid-vaccine-data/tree/main/doses)
+[LA County Department of Public Health](http://publichealth.lacounty.gov/media/coronavirus/vaccine/vaccine-dashboard.htm#selectcity)
+[City of Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Daily-Vaccinations-Administered-in-Chicag/4564-ixr2)
+[Harris County / City of Houston COVID-19 Data Hub](https://covid-harriscounty.hub.arcgis.com/datasets/1377f9a5a7f94917bb3b552492931af1_0/about)
 
-Twitter Data
+Twitter Data:
+Scraped Using [Twint](https://github.com/twintproject/twint)
 
 Other Sources Referenced for Code
