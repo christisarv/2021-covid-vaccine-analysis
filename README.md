@@ -3,18 +3,24 @@
 **Author**: [Christie Sarver](mailto:christie.sarver@gmail.com)
 
 ## Overview
-
+This project explores how sentiment on social media around covid-19 vaccination relates to trends in how vaccines are administered in the US. It will also  examine current and forecasted trends in terms of vaccinations and social media sentiment in the four most populous US cities: New York, Houston, Los Angeles, and Chicago.  
 
 ### The Data
 
-The text data used in NLP is sourced from Twitter using the twint package for scraping. This was pulled in from tweets mentioning vaccines within the date range of 1/1/21-6/15/21
-The vaccination data was sourced from local government health agency websites. 
+Data for vaccines administered by day comes from each city's health department:
 
+* [NYC Department of Health Github](https://github.com/nychealth/covid-vaccine-data/tree/main/doses)
+* [LA County Department of Public Health](http://publichealth.lacounty.gov/media/coronavirus/vaccine/vaccine-dashboard.htm#selectcity)
+* [City of Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Daily-Vaccinations-Administered-in-Chicag/4564-ixr2)
+* [Harris County / City of Houston COVID-19 Data Hub](https://covid-harriscounty.hub.arcgis.com/datasets/1377f9a5a7f94917bb3b552492931af1_0/about)
 
-![sentiment_bars.png](./Images/sentiment_bars.png)
+Twitter data was scraped using [Twint](https://github.com/twintproject/twint) and matched to a sentiment score using [Textblob](https://textblob.readthedocs.io/en/dev/index.html).
 
 ### Business Problem
 
+After an initial success, the US has seen stagnation in vaccination rates while a new contagious Covid variant is spreading. Towards the end of June, government officials announced they likely won't meet President Biden's goal of having 70% of American adults at least partially vaccinated by July 4. Right now, 56% of Americans 18+ are fully vaccinated and 65% have gotten at least one dose. 
+
+Many areas of the country are working to combat vaccine hesitancy and misinformation in a variety of ways. Understanding underlying trends around vaccine communication may help convince more people to get vaccinated, protecting the population against Covid-19 and accelerating an end to the pandemic.
 
 
 ## Methodology 
@@ -63,15 +69,4 @@ Please reference the [Jupyter Notebook](./Final%20Notebook.ipynb) or review this
 Thank you!
 
 
-## Sources
 
-Vaccination Data:
-[NYC Department of Health Github](https://github.com/nychealth/covid-vaccine-data/tree/main/doses)
-[LA County Department of Public Health](http://publichealth.lacounty.gov/media/coronavirus/vaccine/vaccine-dashboard.htm#selectcity)
-[City of Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/COVID-19-Daily-Vaccinations-Administered-in-Chicag/4564-ixr2)
-[Harris County / City of Houston COVID-19 Data Hub](https://covid-harriscounty.hub.arcgis.com/datasets/1377f9a5a7f94917bb3b552492931af1_0/about)
-
-Twitter Data:
-Scraped Using [Twint](https://github.com/twintproject/twint)
-
-Other Sources Referenced for Code
