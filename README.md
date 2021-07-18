@@ -3,7 +3,7 @@
 **Author**: [Christie Sarver](mailto:christie.sarver@gmail.com)
 
 ## Overview
-This project explores how sentiment on social media around covid-19 vaccination relates to trends in how vaccines are administered in the US. It will also  examine current and forecasted trends in terms of vaccinations and social media sentiment in the four most populous US cities: New York, Houston, Los Angeles, and Chicago.  
+This project explores how sentiment on social media around Covid-19 vaccination relates to trends in how vaccines are administered in the US. It will also  examine current and forecasted trends in terms of vaccinations and social media sentiment in the four most populous US cities: New York, Houston, Los Angeles, and Chicago.  
 
 ### The Data
 
@@ -25,27 +25,33 @@ Many areas of the country are working to combat vaccine hesitancy and misinforma
 
 ## Methodology 
 
-A variety of pre-processing and modeling techniques were explored in order to effectively transform the text data and build a strong classifier. Model performance was evaluated on accuracy scores to suit the business goal of building an accurate model for future use.  
+There were multiple components of this project, each separated into a dedicated notebook. Methodologies for each are summarized below with a link to each notebook:
 
-Preprocessing included:
+[Twitter Scraping with Twint](./Twitter%20Scraping%20with%20Twint.ipynb)
+* Data gathering using Twint as a scraping tool
 
-* Data cleaning and exploration to sort into relevant categories
-* Tokenization of words and removal of stop words and grammar. Twitter handles and URLs were also removed
-* Vectorization of text data using diffent strategies such as Count Vectorization and TF-IDF
+[Twitter Sentiment Evaluation](./Twitter%20Sentiment%20Evaluation.ipynb)
+* Natural language processing of twint data including text cleaning and processing (Regex, NLTK)
+* Tagging tweets with sentiment using Textblob and visualizing by sentiment and by location
+* Unsupervised topic modeling and visualization using [Gensim](https://pypi.org/project/gensim/) and [pyLDAvis](https://pyldavis.readthedocs.io/en/latest/readme.html)
 
-Model types explored were:
+![vaccine_sentiment.png](./Images/vaccine_sentiment.png)
 
-* Bayesian Classifiers
-* Support Vector Machines
-* Neural Nets
+[Vaccinantion Records Analysis](./Vaccinantion%20Records%20Analysis)
+* Formatting and cleaning vaccine data
+* Time series modeling using auto ARIMA and ARIMA models
+* Correlation analysis between vaccine data and sentiment data
+
+![vaccines_per_day.png](./Images/vaccines_per_day.png)
 
 ## Results
 
-Out of all the iterations of models that I tried, the neural nets using GloVe were most sucessful in achieving high accuracy. However, after trying several different techniques, the overfitting problem still didn't improve too much. The final model iteration used L1 regularization and included drop out layers to reduce sensitivity to variance. 
+Sentiment
 
-My final neural net achieved 98% accuracy on the training set but 64% on the test set. I would recommend moving forward with this model to evaluate sentiment around future events and conferences related to tech as it has learned off of a specified data set.
+Time Series Models
 
-![neural_net_accuracy.png](./images/neural_net_accuracy.png)
+Correlation
+
 
 ### Conclusions & Future Work
 
@@ -53,7 +59,7 @@ My final neural net achieved 98% accuracy on the training set but 64% on the tes
 
 ## For More Information
 
-Please reference the [Jupyter Notebook](./Final%20Notebook.ipynb) or review this [presentation](./Sentiment%20Analysis%20with%20Twitter%20NLP.pdf).
+Please reference the notebooks for full detail or review this [presentation](./Sentiment%20Analysis%20with%20Twitter%20NLP.pdf).
 
 ## Repository Structure
 
