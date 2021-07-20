@@ -46,7 +46,7 @@ There were multiple components of this project, each separated into a dedicated 
 
 ## Results
 
-An overview of results can be found below. Please reference the presentation and notebooks for full details. 
+An overview of results can be found below. Please reference the [presentation](./Sentiment%20Analysis%20with%20Twitter%20NLP.pdf) and notebooks for full details. 
 
 __Sentiment Analysis of Twitter Conversation__
 
@@ -55,22 +55,19 @@ __Time Series Models__
 * The New York and Chicago ARIMA models capture periodicity to a certain extent (see NYC forecast below as example)
 * Forecasts predict the lowest vaccine amounts per day in Houston at only 5k, with Chicago and LA closer to the same range, and New York continuing to lead
 
-![New%20York_ts_forecast.png](./Images/New%20York_ts_forecast.png)
+![Chicago_ts_forecast.png](./Images/Chicago_ts_forecast.png)
 
 __Correlation__
 * The correlation analysis shows that there is a different relationship between social media conversation around vaccines and vaccines administered over time for each city.
 
-* New York shows the highest correlation, and Chicago shows correlation at a 90 day lag. LA also shows some positive corellation until the end of the timeframe (see example below). Houston does not show a clear relationship. 
+* New York shows the highest correlation (see example below), and Chicago shows correlation at a 90 day lag. LA also shows some positive corellation until the end of the timeframe. Houston does not show a clear relationship. 
 
-![Los%20Angelescorrelation_plot.png](./Images/Los%20Angelescorrelation_plot.png)
+![New%20Yorkcorrelation_plot.png](./Images/New%20Yorkcorrelation_plot.png)
 
 ### Conclusions & Future Work
 
 
 
-## For More Information
-
-Please reference the notebooks for full detail or review this [presentation](./Sentiment%20Analysis%20with%20Twitter%20NLP.pdf).
 
 ## Repository Structure
 
