@@ -62,7 +62,7 @@ __Correlation__
 
 * New York shows the highest correlation, and Chicago shows correlation at a 90 day lag. LA also shows some positive corellation until the end of the timeframe (see example below). Houston does not show a clear relationship. 
 
-![Los Angelescorrelation_plot.png](./Images/Los Angelescorrelation_plot.png)
+![Los%20Angelescorrelation_plot.png](./Images/Los%20Angelescorrelation_plot.png)
 
 ### Conclusions & Future Work
 
