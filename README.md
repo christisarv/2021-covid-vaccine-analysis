@@ -1,4 +1,4 @@
-# Project title
+# 2021 Covid-19 Vaccinations & Social Media Sentiment Analysis
 
 **Author**: [Christie Sarver](mailto:christie.sarver@gmail.com)
 
@@ -65,7 +65,7 @@ __Correlation__
 
 * New York shows the highest correlation (see example below), and Chicago shows correlation at a 90 day lag. LA also shows some positive corellation until the end of the timeframe. Houston does not show a clear relationship. 
 
-[Los_Angelescorrelation_plot.png](./Images/Los_Angelescorrelation_plot.png)
+![image](./Images/%20Los_Angelescorrelation_plot.png)
 
 ### Conclusions & Future Work
 
@@ -82,6 +82,7 @@ __Correlation__
 
 ```
 ├── Archive
+├── Files
 ├── Images
 ├── Data
 ├── Twitter Scraping with Twint.ipynb
