@@ -18,10 +18,10 @@ Twitter data was scraped using [Twint](https://github.com/twintproject/twint) an
 
 ### Business Problem
 
-After an initial success, the US has seen stagnation in vaccination rates while a new contagious Covid variant is spreading. Towards the end of June, government officials announced they likely won't meet President Biden's goal of having 70% of American adults at least partially vaccinated by July 4. Right now, 56% of Americans 18+ are fully vaccinated and 65% have gotten at least one dose. 
+After an initial success, the US has seen stagnation in vaccination rates while a new contagious Covid variant is spreading. Towards the end of June, government officials announced they likely won't meet President Biden's goal of having 70% of American adults at least partially vaccinated by July 4. Right now, 59% of Americans 18+ are fully vaccinated and 68% have gotten at least one dose. 
 
 Many areas of the country are working to combat vaccine hesitancy and misinformation in a variety of ways. Understanding underlying trends around vaccine communication may help convince more people to get vaccinated, protecting the population against Covid-19 and accelerating an end to the pandemic.
-
+[Source](https://www.nytimes.com/interactive/2020/us/covid-19-vaccine-doses.html?action=click&module=Spotlight&pgtype=Homepage)
 
 ## Methodology 
 
