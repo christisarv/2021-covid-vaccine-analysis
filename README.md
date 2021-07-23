@@ -31,14 +31,14 @@ There were multiple components of this project, each separated into a dedicated 
 * Data gathering using Twint as a scraping tool
 
 [Twitter Sentiment Evaluation](./Twitter%20Sentiment%20Evaluation.ipynb)
-* Natural language processing of twint data including text cleaning and processing (Regex, NLTK)
+* Natural language processing of Twint data including text cleaning and processing (Regex, NLTK)
 * Tagging tweets with sentiment using Textblob and visualizing by sentiment and by location
-* Unsupervised topic modeling and visualization using [Gensim](https://pypi.org/project/gensim/) and [pyLDAvis](https://pyldavis.readthedocs.io/en/latest/readme.html)
+* Unsupervised topic modeling and visualization using [Gensim](https://pypi.org/project/gensim/) and [pyLDAvis](https://pyldavis.readthedocs.io/en/latest/readme.html) LDA models
 
 ![vaccine_sentiment.png](./Images/vaccine_sentiment.png)
 
 [Vaccinantion Records Analysis](./Vaccinantion%20Records%20Analysis)
-* Formatting and cleaning vaccine data
+* Formatting and cleaning vaccine data with pandas
 * Time series modeling using auto ARIMA and ARIMA models
 * Correlation analysis between vaccine data and sentiment data
 
@@ -46,9 +46,12 @@ There were multiple components of this project, each separated into a dedicated 
 
 ## Results
 
-An overview of results can be found below. Please reference the [presentation](./Sentiment%20Analysis%20with%20Twitter%20NLP.pdf) and notebooks for full details. 
+An overview of results can be found below. Please reference the [presentation](./Vaccination%20Trends%20and%20Social%20Media) and notebooks for full details. 
 
 __Sentiment Analysis of Twitter Conversation__
+
+* In all topic groupings, there were many common themes, but people were having different experiences with them.
+* There were also regional themes that stood out; please see the notebook for topic visualizations
 
 __Time Series Models__
 * The patterns of vaccinations are proving difficult to capture for each city to make accurate predictions 
@@ -62,14 +65,20 @@ __Correlation__
 
 * New York shows the highest correlation (see example below), and Chicago shows correlation at a 90 day lag. LA also shows some positive corellation until the end of the timeframe. Houston does not show a clear relationship. 
 
-![New%20Yorkcorrelation_plot.png](./Images/New%20Yorkcorrelation_plot.png)
+![Los_Angelescorrelation_plot.png](./Images/Los_Angelescorrelation_plot.png)
 
 ### Conclusions & Future Work
 
+1. While social media sentiment does show a correlation to vaccinations administered in some areas, it's not strong enough to be conclusive on a generalizable scale. When looking to develop messaging to encourage vaccination, pursue alternate channels and explore how they affect people's actions
+
+2. Time series models helped explained trends in vaccination, but data was not strong enough to forecast accurately. Continue to gather data and monitor patterns; explore extraneous factors that could help inform model.
+
+3. Topic clustering uncovered positive and negative topics of conversation that can help shape pro-vaccination messaging. Use results to build location-specific thought starters, while continuing to expeirment with text processing methods
 
 
 
-## Repository Structure
+
+### Repository Structure
 
 ```
 ├── Archive
@@ -78,9 +87,9 @@ __Correlation__
 ├── Twitter Scraping with Twint.ipynb
 ├── Twitter Sentiment Evaluation.ipynb
 ├── Vaccinantion Records Analysis.ipynb
-├── .......pdf
+├── Vaccination Trends and Social Media.pdf
 ├── pos_LDAvis_prepared.pickle
-├── LDAvis_prepared.pickle
+├── neg_LDAvis_prepared.pickle
 ├── README.md
 
 ```
