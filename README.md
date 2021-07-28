@@ -46,7 +46,7 @@ There were multiple components of this project, each separated into a dedicated 
 
 ## Results
 
-An overview of results can be found below. Please reference the [presentation](./Vaccination%20Trends%20and%20Social%20Media.pdf) and notebooks for full details. A recording of this presentation can also be accessed [here](https://www.canva.com/design/DAEjjcuOu8Q/3jlmpYwceAjhQkFD27QOSg/view?utm_content=DAEjjcuOu8Q&utm_campaign=designshare&utm_medium=link&utm_source=recording_view)
+An overview of results can be found below. Please reference the [presentation](./Vaccination%20Trends%20and%20Social%20Media.pdf) and notebooks for full details. A recording of this presentation can also be accessed [here.](https://www.canva.com/design/DAEjjcuOu8Q/3jlmpYwceAjhQkFD27QOSg/view?utm_content=DAEjjcuOu8Q&utm_campaign=designshare&utm_medium=link&utm_source=recording_view)
 
 __Sentiment Analysis of Twitter Conversation__
 
